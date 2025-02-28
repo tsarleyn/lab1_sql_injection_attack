@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.echaluce'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+//    implementation 'org.xerial:sqlite-jdbc:3.49.0.0'
+    implementation files('lib/sqlite-jdbc-3.49.0.0.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
